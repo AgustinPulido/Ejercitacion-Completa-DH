@@ -1,0 +1,44 @@
+VALIDACIONES CON YUP
+------------------------------------------------------------------------------------------------------
+Documentación oficial: 
+https://www.npmjs.com/package/yup
+------------------------------------------------------------------------------------------------------
+Vamos a validar la creación de un producto mediante Yup.
+0- Instalamos yup:
+$ npm install yup --save
+
+1- Dentro de nuetro directorio de Middlewares, creamos un archivo llamado productValidator.js
+
+const yup = require('yup');
+let productValidator = {
+  create: (req, res, next) => {
+    const data = req.body;
+    const schema = yup.object().shape({
+      codigo: yup.string().required().max(4),
+      nombre: yup.string().required().min(3).max(255),
+      origen: yup.string().required().min(2).max(100),
+      email: yup.string().email().max(80),
+      stock: yup.number().required().positive().integer().max(9999)
+    });
+    schema.validate(data)
+    .then(function(result){
+      next(); // todo está ok, continúa
+    })
+    .catch(function(err) { // hay errores de validación
+      let resultValidation = {
+         'estado': 'ERROR',
+         'nombre': `${err.name}:`,
+         'descripcion': `${err.errors}`
+      }
+      res.status(200).json(resultValidation);
+    });
+  }
+}
+module.exports = productValidator;
+
+
+2- Abrimos /routes/products.js e importamos el middleware
+const productValidator = require('../middlewares/productValidator');
+
+3- En el mismo archivo, invocamos la función create del middleware:
+router.post('/', productValidator.create, productController.newProduct);

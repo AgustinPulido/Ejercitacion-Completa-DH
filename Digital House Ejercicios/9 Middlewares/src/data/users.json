@@ -1,0 +1,42 @@
+[
+ {
+  "id": 1,
+  "nombre": "Matías",
+  "apellido": "Campoy",
+  "email": "mcampoy@gmail.com",
+  "password": "$2b$10$UZXGmRF3.cckN6xkD2mcxuMhCHVHoIINquRh.vWoM9ZuXTskC8o2G",
+  "avatar": "avatar-1590665425327.jpg"
+ },
+ {
+  "id": 2,
+  "nombre": "Noe",
+  "apellido": "Garcia",
+  "email": "noegarcia@gmail.com",
+  "password": "$2b$10$jhPUMVkITF1dpUsESJike.Gp8z32mfagtBbT5EQuKKezxIq18HUbm",
+  "avatar": "avatar-1590665497396.png"
+ },
+ {
+  "id": 3,
+  "nombre": "Luke",
+  "apellido": "Skywalker",
+  "email": "jedi@lafuerza.com",
+  "password": "$2b$10$507HKV5Rpi6Vdgi/nRh5VuybYvq.tv30fDQHaUsobp/OlDUp6hHhq",
+  "avatar": "avatar-1590690620614.png"
+ },
+ {
+  "id": 4,
+  "nombre": "Noelia",
+  "apellido": "Garcia",
+  "email": "noeb@yahoo.com.ar",
+  "password": "$2b$10$Vls1iPn8Kw6kEsrE4agZd.x6lWrJ9H9w1udKejW0Xh1etfyUvM4ZK",
+  "avatar": "avatar-1590691064945.jpg"
+ },
+ {
+  "id": 5,
+  "nombre": "Pedro",
+  "apellido": "Del Castillo",
+  "email": "pedrito@fundador.com",
+  "password": "$2b$10$N.t92ElGYF4zOa2tC8JVtOYSaGZ8DjJGbB2.u26fOaBEOvKtf2KWu",
+  "avatar": "avatar-1590696920125.jpg"
+ }
+]

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<%- include('partials/head') %>
+</head>
+
+<body>
+	<!-- Header -->
+	<%- include('partials/header') %>
+	<!-- /Header -->
+
+	<!-- Banner -->
+	<div class="banner"><img class="col-12 banner" src="images/img-home-banner.jpg" alt=""></div>
+	<!-- /Banner -->
+
+	<!-- Contenedor -->
+	<div class="container-fluid big-container">
+
+		<!-- Últimas búsquedas -->
+		<div class="container busquedas">
+
+			<section class="row">
+
+				<h1 class="col-12">Basado en tu última visita</h1>
+
+				<% for (let product of visited){ %>
+
+					<%- include('partials/product', {product}) %>
+
+				<% } %>
+
+			</section>
+
+		</div>
+		<!-- /Últimas búsquedas -->
+
+		<!-- Ofertas -->
+		<div class="container ofertas">
+
+			<section class="row">
+
+				<h1 class="col-12">Ofertas</h1>
+
+				<% for (let product of inSale){ %>
+
+					<%- include('partials/product', {product}) %>
+
+				<% } %>
+
+			</section>
+
+		</div>
+		<!-- /Ofertas -->
+
+	</div>
+	<!-- /Contenedor -->
+
+	<!-- Footer -->
+	<%- include('partials/footer') %>
+	<!-- /Footer -->
+
+	<script src="/javascripts/bootstrap.min.js"></script>
+	<script src="/javascripts/jquery-3.5.1.min.js"></script>
+	<script src="/javascripts/main.js"></script>
+</body>
+
+</html>

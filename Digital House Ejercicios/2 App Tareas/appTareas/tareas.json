@@ -1,0 +1,22 @@
+[
+ {
+  "titulo": "Repasar JS",
+  "estado": "completa"
+ },
+ {
+  "titulo": "Armar aplicación de Tareas",
+  "estado": "en progreso"
+ },
+ {
+  "titulo": "Break",
+  "estado": "pendinte"
+ },
+ {
+  "titulo": "estudiar",
+  "estado": "pendiente"
+ },
+ {
+  "titulo": "Ver clase remota",
+  "estado": "pendiente"
+ }
+]

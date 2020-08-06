@@ -1,0 +1,32 @@
+[
+    {
+        "autor": "García Márquez, Gabriel",
+        "titulo": "La hojarasca",
+        "editorial": "Sudamericana",
+        "año": "2007"
+    },
+    {
+        "autor": "García Márquez, Gabriel",
+        "titulo": "Los funerales de la Mamá Grande",
+        "editorial": "Debolsillo",
+        "año": "2011"
+    },
+    {
+        "autor": "Cortázar, Julio",
+        "titulo": "Bestiario",
+        "editorial": "Sudamericana",
+        "año": "1995"
+    },
+    {
+        "autor": "Tizón, Héctor",
+        "titulo": "El hombre que llegó a un pueblo",
+        "editorial": "Alfaguara",
+        "año": "2005"
+    },
+    {
+        "autor": "Borges, Jorge Luis",
+        "titulo": "El Aleph",
+        "editorial": "EMC",
+        "año": "1953"
+    }
+]

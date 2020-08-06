@@ -1,0 +1,32 @@
+[
+ {
+  "dia": "Lunes",
+  "tipo": "presencial",
+  "entrada": "18:30",
+  "salida": "22"
+ },
+ {
+  "dia": "Miércoles",
+  "tipo": "virtual",
+  "entrada": "18:30",
+  "salida": "22"
+ },
+ {
+  "dia": "Jueves",
+  "tipo": "remota",
+  "entrada": "8:30",
+  "salida": "12"
+ },
+ {
+  "dia": "Viernes",
+  "entrada": "12",
+  "salida": "15",
+  "tipo": "virtual"
+ },
+ {
+  "dia": "Sábado",
+  "entrada": "10",
+  "salida": "15",
+  "tipo": "presencial"
+ }
+]

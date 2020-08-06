@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DH heroes</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <header>
+    <h1>DH HEROES</h1>
+    <label for="btn-menu"><i class="fas fa-bars"></i></label>
+    <nav>
+      <ul>
+        <li><a href="/">Volver</a></li>
+      </ul>
+    </nav>
+  </header><br><br><br>
+
+  <h3>Consultar héroes según su ID</h3>
+  <input id="id1" type="text" placeholder="Ingrese un ID">
+  <a class="boton" href="#">Consultar</a>
+
+  <h4><%= presentacion %></h4>
+  <script>
+    let id1 = document.getElementById('id1')
+    let boton = document.querySelectorAll('.boton')
+
+    boton[0].addEventListener('click', () => {
+      boton[0].href = `/heroes/detalle/${id1.value || 1}`
+    })
+  </script>
+</body>
+<br><br><br><br><footer>Página creada por Matías Campoy</footer>
+
+</html>

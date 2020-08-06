@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  background-color: #434750;
+
+}
+
+.container-header {
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  border-bottom: 2px solid #0077B5;
+  background: #fff;
+  height: 150px;
+  padding-bottom: 0;
+}
+
+.log {
+  flex-direction: column;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 30px;
+  height: 40px;
+  align-self: center;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 50px;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  position: relative;
+  margin-top: 15px;
+}
+
+.title-index{
+  align-self: center;
+  color: #0077B5;  
+  margin-left: 15px;
+}
+
+.subtitle-index{
+  align-self: center;
+  color: #0077B5;  
+
+}
+
+span {
+  color: black;
+}
+
+.ancor {
+  color: #0077B5;  
+  font-weight: 800;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  justify-content: flex-end;
+}
+
+.toggle-nav a:first-child {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10%;
+}
+
+.toggle-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  right: -16px;
+}
+
+.toggle-nav a {
+  color: black;
+}
+
+.register {
+  display: flex;
+}
+.login {
+  display: flex;
+}
+.toggle-nav i {
+  font-size: 15px;
+  padding-right: 5px;
+  justify-content: baseline;
+}
+
+.btn {
+  background: #0077B5;
+  border: .1 solid #0077B5;
+  box-shadow: -9px -9px 16px #ffffff;
+  box-shadow: 9px 9px 16pc #A3B1C6;
+  padding: 10px;
+  margin: 15px;
+  width: 150px;
+  height: 20px;
+  border-radius: 10px;
+  justify-content: flex-end;
+  font-size: 1em;
+}
+
+.fas {
+  font-size: 3em;
+  color: #0077B5;
+  margin-right: 3%;
+  margin-top: 3%;
+}
+
+/* Estilos Register */
+.container {
+  margin: 0;
+  padding: 0;
+  background-color: #434750;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logoblanco {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  width: 80px;
+  align-self: flex-end;
+}
+
+.title-register {
+  color: white;
+  margin: 0;
+  display: block;
+  margin-bottom: 3%;
+}
+
+.wrapper-reg {
+  background-color: white;
+  display: flex;
+  width: 30%;
+  margin-top: 6%;
+  margin-bottom: 1%;
+  padding-top: 0;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  padding-top: 0%;
+  width: 100%;
+}
+
+.register-form label {
+  text-align: left;
+}
+
+.register-form input {
+  border-style: none;
+  background: #E0E5EC;
+  border-radius: 3px;
+  height: 30px;
+  padding: 1%;
+  width: 92%;
+  border: none;
+  align-self: center;
+}
+
+.avatar {
+  display: flex;
+}
+
+.avatar label {
+  justify-self: start;
+  width: 30%;
+  padding: 1%;
+  border-radius: 3px;
+  align-self: center;
+}
+.avatar input{
+  justify-self: self-end;
+  border: none;
+  background: #fff;
+  width: 100%;
+}
+.btns {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+.btns input {
+  color: #fff;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 30px;
+    padding: .2px;
+    border: none;
+    font-size: 1em;
+    background: #0077B5;
+  }
+
+.cabecera {
+  background: #0077B5;
+  display: flex;
+  margin-bottom: 1%;
+  width: 100%;
+}
+
+.reg {
+  text-align: left;
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+/* Estilos Login */
+
+.wrapper-log {
+  background-color: white;
+  display: flex;
+  width: 30%;
+  margin-top: 12%;
+  margin-bottom: 1%;
+  padding-top: 0;
+}
+
+.login-form input {
+  width: 79%;
+  align-self: center;
+}
+
+/* Estilos Profile */
+
+.user{
+  background: #fff;
+}
+
+.header-profile {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5%;
+    border: 2px solid #434750;
+}
+
+.userlog {
+  margin: 0;
+}
+
+.avatar-img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  align-self: center;
+}
+
+.wrapper-user {
+  background-color: #434750;
+  padding-bottom: 3%;
+ flex-direction: column;
+ width: 40%;
+}
+
+.username {
+  color: white;
+  font-size: 2em;
+  margin-left: 15px;
+  margin: 14px;
+}
+
+.welcome {
+  color: white;
+}
+
+.ingreso {
+  display: flex;
+  flex-direction: column;
+}
+
+.mail {
+  margin: 15px 0;
+}
+
+.fa-envelope{
+  color: white;
+  background: #434750;
+  font-size: 15px;
+  margin: 0;
+  padding: 2%;
+}
+
+.fa-key{
+  color: white;
+    background: #434750;
+    font-size: 15px;
+    margin: 0;
+    padding: 2%;
+}

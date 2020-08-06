@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background: #fff;
+}
+
+.big-container {
+    background-color: #ebebeb;
+}
+
+.product-wrapper {
+
+    padding: 0;
+}
+
+.name {
+    color: #666666;
+    font-weight: 600;
+    font-size: 1.8em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.product-container {
+    background: #fff;
+    border-radius: 15px;
+}
+
+.product-box-image {
+    padding: 0;
+
+}
+
+.product-box-image img {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.product-box-image p {
+    text-align: left;
+    margin: 30px 0px;
+    margin-bottom: 80px;
+    font-size: 1.3em;
+}
+
+.product-details {
+    padding: 0px;
+}
+
+.product-details-info {
+    padding: 0;
+}
+
+.product-details h1 {
+    font-weight: 600;
+    color: black;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+.precio-descuento {
+    padding: 0;
+    padding-top: 15px;
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+.tachado {
+    text-decoration: line-through;
+    color: #39b54a;
+}
+
+.discount {
+    font-weight: 700;
+    color: #39b54a;
+}
+
+.price {
+    font-size: 4em;
+}
+
+.pago {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.pago p {
+    color: #666666;
+    margin: 25px 0;
+    font-size: 1.1em;
+    min-width: 90%;
+    text-align: left;
+}
+
+.pago i {
+    color: #39b54a;
+    padding-left: 0;
+    font-size: 1.5em;
+}
+
+
+.boton button {
+    padding: 5px;
+    background-color: #1259C3;
+    width: 100%;
+    display: block;
+    margin: 30px auto 10px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+/* estilos laptop */
+
+@media (min-width: 1023px) {
+
+    .product-box-image img {
+        width: 80%;
+    }
+
+    .product-box-image p {
+        margin-bottom: 30px;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .product-details {
+        border-left: 2px solid #ebebeb;
+        padding: 15px 0px 15px 15px;
+    }
+
+    .product-details h1 {
+        font-size: 1.7em;
+        margin: 25px 5px 30px;
+    }
+
+    .precio-descuento {
+        padding-top: 0;
+    }
+
+    .pago p {
+        font-size: 1em;
+    }
+
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Listado de Peliculas</title>
+</head>
+<body>
+    <%- include('partials/header') %> 
+
+    <h1>Cargar película</h1>
+
+    <form action="/movies/create" method="POST">
+    <div>
+        <label for="">Título</label> <br>
+        <input type="text" name="titulo" id="">
+    </div> <br> <br>
+    <div>
+        <label for="">Premios</label> <br>
+        <input type="text" name="premios" id="">
+    </div> <br><br>
+    <div>
+        <label for="">Duración</label><br>
+        <input type="text" name="duracion" id="">
+    </div><br><br>
+    <div>
+        <label for="">Rating</label><br>
+        <input type="text" name="rating" id="">
+    </div><br><br>
+    <div>
+        <label for="">Feha de estreno</label><br>
+        <input type="date" name="estreno" id="">
+    </div><br><br>
+    <div>
+        <label for="">Género</label><br>
+        <select name="genero" >
+            <option value="select" class="active">Seleccionar</option>
+            <% for(let genre of genres) { %>
+            
+                <option value="<%= genre.id %> "><%= genre.name %> </option> 
+            
+            <% } %>
+        </select>
+    </div> <br> <br>
+
+    <button type="submit">Crear</button>
+    
+</form>
+
+</body>
+</html>

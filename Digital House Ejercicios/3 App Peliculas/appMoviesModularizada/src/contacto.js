@@ -1,0 +1,3 @@
+const infoContacto = 'Contáctanos' + '\n\n' + `¿Tenés algo para contarnos? \n\n Nos encanta escuchar a nuestros clientes.\n\n Si deseas contactarnos podés escribirnos al siguiente email: dhmovies@digitalhouse.com o en las redes sociales.\n\n Envianos tu consulta, sugerencia o reclamo y será respondido a la brevedad posible. Recordá que también podes consultar la sección de Preguntas Frecuentes para obtener respuestas inmediatas a los problemas más comunes.\n`;
+
+module.exports = infoContacto;

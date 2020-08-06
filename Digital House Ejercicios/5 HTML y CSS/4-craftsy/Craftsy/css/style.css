@@ -1,0 +1,212 @@
+
+/* estilos home */
+
+* {box-sizing: border-box;}
+
+body {
+    width: 1140px;
+    height: 100%;
+    background-image: url("../img/bg-2.png");
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+header {
+    background-color: rgb(239, 76, 38);
+    margin: 20px 0px;
+    overflow: hidden;
+}
+
+header nav,
+img {
+    float: left;
+    padding: 10px;
+}
+
+header img {
+    margin-top: 8px;
+}
+
+header li {
+    margin: 10px;
+    text-align: left;
+    font-size: 12pt;
+}
+
+header ul {
+    margin-left: 0px;
+    padding-inline-start: 0px;
+
+}
+
+header a {
+    color: white;
+    font-size: 13pt;
+}
+
+#menuLog {
+    float: right;
+}
+
+section {
+    background-color: white;
+    width: 800px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 0px 30px 0px;
+}
+
+#tutoriales {
+    width: 320px;
+    position: relative;
+    float: right;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+    background-color: white;
+    font-weight: bold;
+    padding: 15px;
+    margin: 10px 0px 10px 0px;
+}
+
+#tutoriales article {
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+
+#publicidad {
+    width: 320px;
+    position: relative;
+    float: right;
+    margin-top: 30px;
+}
+
+#publicidad img {
+    background-color: white;
+    padding: 10px;
+}
+
+section article {
+    width: 380px;
+    float: left;
+    position: relative;
+    margin: 10px 10px 30px 10px;
+}
+
+section article img {
+    width: 380px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin: 0px;
+}
+
+.verMas {
+    background-color: rgb(239, 76, 38);
+    padding: 10px;
+    text-align: center;
+    margin: 30px 0px;
+    color: white;
+}
+
+section p {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+/* Estilos registro */
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 45px;
+}
+
+form h3 {
+    text-align: left;
+
+}
+
+.basicos {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-left: 3px;
+}
+
+.obligatorio {
+    font-size: 12pt;
+    color: rgb(239, 76, 38);
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#paises {
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 5px;
+    font-weight: bold;
+    width: 300px;
+}
+
+#genero input, p {
+    color: black;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#comentarios {
+    text-align: left;
+}
+
+button {
+    width: 30%;
+    position: relative;
+    float: left;
+    margin: 5px;
+    padding: 10px 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+    border-radius: 8px;
+    background-color: rgb(60, 141, 188);
+    border-style: none;
+    border-bottom: 20px;
+}
+
+input:focus {
+    border: 3px solid rgb(239, 76, 38);
+}
+
+select:focus {
+    border: 3px solid rgb(239, 76, 38);
+}
+
+
+/* Etilos Login */
+
+
+#recordar p {
+    position: relative;
+    float: right;
+    font-weight: 500;
+    right: 0;
+}

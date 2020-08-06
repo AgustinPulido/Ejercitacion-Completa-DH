@@ -1,0 +1,8 @@
+----------------------------------------------------------------------------------------------------------
+1 Funcionamiento de Middlewares: https://youtu.be/EaKFsqqAEpU
+----------------------------------------------------------------------------------------------------------
+2 Centralizar la gestión de errores en funciones reutilizables: https://youtu.be/qfH4jyDZMvI
+----------------------------------------------------------------------------------------------------------
+3 Hacer validaciones en la API mediante Yup: https://www.youtube.com/watch?v=Rf6mQl_xtCI
+----------------------------------------------------------------------------------------------------------
+4 Manejo de errores: https://youtu.be/oa-OvrD9tJg

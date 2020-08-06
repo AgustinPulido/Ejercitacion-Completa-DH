@@ -1,0 +1,2 @@
+La idea de este ejercicio es modularizar (exportar e importar) 
+y enviar parámetros por consola con process.argv al cual adempas se le aplicó desestructuración

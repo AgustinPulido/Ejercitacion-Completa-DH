@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DH heroes</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <header>
+    <h1>DH HEROES</h1>
+    <label for="btn-menu"><i class="fas fa-bars"></i></label>
+    <nav>
+      <ul>
+        <li><a href="/">Volver</a></li>
+      </ul>
+    </nav>
+  </header><br><br>
+
+  <h2>¿Quiere conocer a nuestros héroes?</h2>
+  <h4>Por favor indique la ID del héroes que desea conocer:
+  <input id="id2" type="text" placeholder="Ingrese ID"><a class="boton" href="#">Consultar</a></h4>
+  <label for="ok"><h4>Si además quiere conocer su biogafía <input type="checkbox" value="ok" id="ok" name="ok"></h4></label>
+  <h2>
+    No encontramosun héroe para mostrarte su biografía
+    <br><br>
+  </h2>
+
+  <script>
+    let id2 = document.getElementById('id2')
+    let boton = document.querySelectorAll('.boton')
+    let cbox = document.getElementById('ok')
+
+    boton[0].addEventListener('click', () => {
+      boton[0].href = !cbox.checked ? `/heroes/bio/${id2.value || 1}` :
+        `/heroes/bio/${id2.value || 1}/${cbox.value}`
+    })
+  </script>
+</body>
+<br><br><br><footer>Página creada por Matías Campoy</footer>
+</html>

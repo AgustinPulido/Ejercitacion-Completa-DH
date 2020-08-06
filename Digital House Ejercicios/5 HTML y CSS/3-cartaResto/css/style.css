@@ -1,0 +1,106 @@
+* {box-sizing: border-box;}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid darkgrey;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+main {
+    overflow: hidden;
+}
+
+nav {
+    width: 300px;
+    float: left;
+    padding: 15px;
+    margin-left: 0px;
+   padding-top: 0;
+}
+
+section {
+    float: left;
+    width: 610px;
+    padding: 15px;
+    border-left: 1px solid darkgrey;
+    padding-top: 0;
+}
+
+footer{
+    padding: 20px;
+    background-color: lightgray;
+    height: 170px;
+    margin-top: 30px;
+}
+
+footer img {
+    position: relative;
+    width: 250px;
+    margin-left: 20px;
+    float: left;
+}
+
+img {
+    float: right;
+    border: 2px solid lightgrey;
+    margin-left: 5px;
+}
+
+h1, h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+h4, p {
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+p {
+    margin-top: 5px;
+}
+
+ul {
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+ul li a {
+    color: gray;
+    text-decoration: none;
+}
+
+#volver {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.contacto {
+    float: right;
+    list-style: none;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.contacto a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    line-height: 2px;
+}

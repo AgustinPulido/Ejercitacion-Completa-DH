@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <!-- Font Awesome Stylesheet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="wrapper-log">
+      <% if (typeof errors != 'undefined') { %>
+        <p style="color: red;"><%= errors.msg %> </p>
+      <% } %>
+
+      <form class="register-form login-form" method="POST" action="/admin/">
+        <img class="logoblanco" onclick="window.open('/')" src="/images/logo.png" alt="">
+        <h3 class="reg">Ingreso para administradores</h3>
+
+        <div class="ingreso">
+          <div class="mail">
+            <i class="fas fa-envelope"></i>
+            <input type="text" name="name" class="form-control " id="name" aria-describedby="name" placeholder="Nombre"/><br>
+          </div>
+            
+          <div class="password">
+            <i class="fas fa-key"></i>
+            <input type="password" name="password" class="form-control " id="password" aria-describedby="password" placeholder= "Contraseña"/>
+          </div>
+        </div>
+
+        <div class="btns">
+          <input class="btn" type="reset"></input>
+
+          <input class="btn" type="submit" value="Ingresar"></input>
+        </div>
+        <div>
+          <span>¿Todavía no tienes una cuenta? </span> <a class="ancor" href="/users/register">Registrarse</a>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

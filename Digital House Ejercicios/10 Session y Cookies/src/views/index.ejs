@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <title>Matías Campoy | LogIn </title>
+</head>
+
+<body>
+    <div class="container user"  <%= color ? 'style=background-color:' + color : '' %> >
+        <div class="wrapper-log wrapper-user">
+            <header class="header-profile">
+                <img class="logoblanco userlog" onclick="window.open('/')" src="/images/logo.png" alt="">
+            </header>
+            <h3 class="welcome">Elige tu color de perfil</h3>
+            <img class="avatar-img" src="images/clon.png" width="150px" height="150px" alt="">
+            <h4 class="username">Matías Campoy </h4>
+
+            <div class="color-selector">
+                <form action="/color" method="POST">
+                    <select class="selectpicker quantity-selector-detalles" name="color">
+                        <option class="option" value='white'>blanco</option>
+                        <option class="option" value='lightblue'>celeste</option>
+                        <option class="option" value='pink'>rosado</option>
+                        <option class="option" value='lightgreen'>verde</option>
+                        <option class="option" value='black'>negro</option>
+                    </select>
+                    <br>
+                    <input class="btn-color" type="submit" value="Elegir"> <br> 
+                    <h3 style="color: white"><input type="checkbox" name="recordar" id="recordar-color">Recordar
+                      color</h3><br><br>
+                    <a href="/selected" class="btn-color" style="color: black; padding: 5px; font-weight: 500;">Usar este color</a>
+                    <a href="/deselected" class="btn-color" style="color: black; padding: 5px 10px; font-weight: 500;">Olvidar color</a>
+                  </form>
+
+            </div>
+
+        </div>
+    </div>
+  </body>
+</html>

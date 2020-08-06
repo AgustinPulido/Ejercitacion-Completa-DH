@@ -1,0 +1,25 @@
+<article class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+    <a href="/product/detail/<%= product.id %>/<%= product.category %>">
+        <div class="art-container">
+            <figure>
+                <img src="images/products/<%= product.image %>" alt="<%= product.name %>">
+                <i class="fas fa-truck truck"></i>
+            </figure>
+            <div class="info">
+
+                <% if(product.discount != 0) { %>
+
+                    <h3>$<%= toThousand(product.price) %> </h3>
+                    <span> <%= product.discount %>% OFF</span>
+
+                <% } else { %>
+
+                    <h3>$<%= toThousand(product.price) %> </h3>
+
+                <% } %>
+
+                <p class="col-12 mas-info"><%= product.name %></p>
+            </div>
+        </div>
+    </a>
+</article>

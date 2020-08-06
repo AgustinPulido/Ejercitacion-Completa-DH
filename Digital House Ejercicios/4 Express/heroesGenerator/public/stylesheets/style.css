@@ -1,0 +1,60 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
+label {
+  margin: 25px;
+}
+a {
+  text-decoration: none;
+}
+ul{
+  overflow: hidden;
+}
+li {
+  list-style: none;
+}
+
+li div {
+  float: left;
+  margin-left: 130px;
+}
+li div a {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  inline-size: 18px;
+  border: 1px solid black;
+  /* border-radius: 50%; */
+  margin: 16px;
+  padding: 18px;
+}
+
+details {
+  background-color: lightgray;
+  text-align: justify;
+  margin-right: 70%;
+  }
+
+  li a{
+    border: 1px solid black;
+  /* border-radius: 50%; */
+  margin: 16px;
+  padding: 18px;
+  }
+
+  footer{
+    text-align: center;
+  }
+
+  #heroes {
+    margin-left: 150px;
+  }

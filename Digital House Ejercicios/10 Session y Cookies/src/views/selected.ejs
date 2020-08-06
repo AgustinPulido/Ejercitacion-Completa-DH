@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Matías Campoy | LogIn </title>
+</head>
+
+<body>
+    <div class="container user"  <%= color ? 'style=background-color:' + color : '' %> >
+        <div class="wrapper-log wrapper-user">
+            <header class="header-profile">
+                <img class="logoblanco userlog" onclick="window.open('/')" src="/images/logo.png" alt="">
+            </header>
+            <br>
+            <h3 class="welcome">¡Muy bien!</h3>
+            
+            
+            <div class="color-selector">
+                <h3 style="color: #ffff">¡Elegiste este color! ¡Disfrútalo!</h3>
+                <i class="fas fa-check-circle" style="width: 30px; height: 30px; color: <%= color %>; align-self: center;"></i>
+                
+                <a href="/" style="background-color: #ffff; width: 150px; padding: 3%; border-radius: 5px; align-self: center; color: black; margin-top: 10%;">Elegir otro color</a>
+            </div>
+
+        </div>
+    </div>
+  </body>
+</html>

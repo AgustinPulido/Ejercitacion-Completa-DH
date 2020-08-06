@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="css/encuesta.css">
+</head>
+
+<body>
+
+<main>
+    
+        <h1>Encuesta de satisfacción</h1> <br>
+    
+        <form>
+            
+                <h2><label for="">¿De dónde sos?</label></h2>
+                <select name="localidad" id="">
+                    <option value="seleccion">Seleccione una opción</option>
+                    <option value="granmendoza">Gran Mendoza</option>
+                    <option value="este">Zona Este</option>
+                    <option value="uco">Valle de Uco</option>
+                </select>
+                <br><br>
+            
+            
+                <h2><label>¿Qué te pareció la iluminasión del ambiente?</label></h2>
+                <input type="checkbox" name="iluminacion" value="acorde"> Muy acorde <br>
+                <input type="checkbox" name="iluminacion" value="mejorable"> Buena, pero podría mejorar <br>
+                <input type="checkbox" name="iluminacion" value="mala"> Mala <br>
+                <br><br>
+            
+            
+                <h2><label>¿Qué tipo de plato fue el que más te gustó?</label></h2>
+                <input type="checkbox" name="menu" value="entrada"> Entrada <br>
+                <input type="checkbox" name="menu" value="ppal"> Plato principal <br>
+                <input type="checkbox" name="menu" value="postre"> Postre <br>
+                <input type="checkbox" name="menu" value="otro"> Otros <br>
+            
+            <br><br>    
+            
+                <h2><label for="">¿Recomendarías el lugar?</label></h2>
+                <input type="radio" name="recomendacion" value="s" checked> Sí
+                <input type="radio" name="recomendacion" value="n"> No <br> <br>
+            
+                <h2>¿Por qué?</h2>
+                <textarea name="comentario" id="" cols="100" rows="10" placeholder="Ingrese su comentario aquí..."></textarea>
+                <br><br>
+            
+            
+                <h2>Dejanos tus datos y nos pondremos en contacto con vos</h2>
+                <label for="">Nombre:</label>
+                <input type="name" name="name" id="name" required placeholder="Nombre y Apellido"><br> <br>
+                <label for="">Email:</label>
+                <input type="mail" name="mail" id="mail" required placeholder="nombre@ejemplo.com">
+                <br><br><br>
+            
+            
+            
+                <button type="submit" name="enviar" id="izq" value="Enviar">Enviar</button>
+                <button type="reset" name="reset" id="der" value="reset">Resetear</button>
+            
+        </form>
+    
+</main>
+</body>
+
+</html>
+
+

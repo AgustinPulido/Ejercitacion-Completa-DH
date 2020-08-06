@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- Font Awesome Stylesheet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body>
+    
+    <header class="container-header">
+        <div class="log">
+            <img class="logo" src="/images/logo.png" alt="">
+            <!-- <h1 class="title-index">Log<span>In</span></h1> -->
+            <span class="subtitle-index">Register<span>&</span>Login</span>
+        </div>
+        <nav>
+            <div class="botones">
+            <i class="fas fa-user-circle" id="movil"></i>
+                <div class="toggle-nav" id="principal">
+                    <div class="register">
+                        <i class="fas fa-sign-in-alt"></i> <a href="/users/register">Registrate</a> <br><br>
+                    </div>
+                    <div class="login">
+                        <i class="fas fa-user"></i><a href="/users/login">Ingresá</a>
+                    </div> <br>
+                    <div class="login">
+                        <i class="fas fa-user-lock"></i><a href="/admin/">Admin</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        (function(){
+    let movil = document.getElementById('movil')
+    let menu = document.getElementById('principal')
+    console.log(movil, menu);
+    
+    movil.addEventListener('click', function(){
+        menu.style.display = menu.style.display == 'block'? 'none': 'block';
+    })
+})()
+    </script>
+     
+</body>
+</html>

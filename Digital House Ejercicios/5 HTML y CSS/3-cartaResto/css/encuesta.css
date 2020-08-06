@@ -1,0 +1,58 @@
+* {box-sizing: border-box;}
+
+body, html {
+    width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    border: 5px solid gold;
+    padding: 20px 80px;
+    margin: 5px 20px;
+}
+
+h1 {
+    font-size: 24pt;
+}
+
+#botones {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#izq {
+    width: 300px;
+    height: 40px;
+    border-radius: 5%;
+    background-color: white;
+    border-color: goldenrod;
+    border-radius: 20px 0 20px 0;
+    box-shadow: goldenrod;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+#der {
+    width: 300px;
+    height: 40px;
+    border-radius: 5%;
+    background-color: white;
+    border-color: goldenrod;
+    border-radius: 20px 0 20px 0;
+    box-shadow: goldenrod;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+#izq:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
+    background-color: goldenrod;
+    color: honeydew;
+    }
+
+#der:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
+    background-color: goldenrod;
+    color: honeydew;
+    }

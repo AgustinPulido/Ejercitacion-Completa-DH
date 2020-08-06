@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrenos</title>
+      <!-- Font Awesome Stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <%- include('partials/header')  %>
+    <h2>Útimos lanzamientos: </h2>
+    <ul>
+        <% for( let movie of movies) { %>
+            <a href="/movies/detail/<%= movie.id %>"> <li><%= movie.title %> <br> <i class="info fas fa-info-circle">     información</i> </li> </a>
+        <% } %>
+    </ul>
+</body>
+</html>

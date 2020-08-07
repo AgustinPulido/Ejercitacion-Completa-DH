@@ -3,24 +3,24 @@ const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 
 const controller = {
-    index: async (req, res) => {
+    index: async(req, res) => {
         try {
-        const inSale = await db.Product.findAll({
-            where: {
-                category: 'in-sale'
-            }
-        })
-        const visited = await db.Product.findAll({
-            where: {
-                category: 'visited'
-            }
-        })
+            const inSale = await db.Product.findAll({
+                where: {
+                    category: 'in-sale'
+                }
+            })
+            const visited = await db.Product.findAll({
+                where: {
+                    category: 'visited'
+                }
+            })
 
-        res.render("index", {
-            inSale,
-            visited,
-        });
-        }catch (err) {
+            res.render("index", {
+                inSale,
+                visited,
+            });
+        } catch (err) {
             console.error(err)
         }
     },

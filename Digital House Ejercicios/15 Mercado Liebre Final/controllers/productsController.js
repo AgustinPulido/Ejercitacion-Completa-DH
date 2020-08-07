@@ -1,8 +1,8 @@
 let db = require('../database/models')
 
 const controller = {
-    // MUESTRA TODOS LOS PRODUCTOS
-    index: async (req, res) => {
+    // Listado de productos
+    index: async(req, res) => {
         try {
             let products = await db.Product.findAll()
 
@@ -16,8 +16,8 @@ const controller = {
 
     },
 
-    // DETALLE DE PRODUCTO
-    detail: async (req, res) => {
+    // Detalle de productos
+    detail: async(req, res) => {
         console.log(req.params.id)
 
         try {
@@ -35,7 +35,7 @@ const controller = {
         }
     },
 
-    sales: async (req, res) => {
+    sales: async(req, res) => {
         try {
             const products = await db.Product.findAll({
                 where: {
@@ -45,19 +45,19 @@ const controller = {
             res.render("sales", {
                 products
             });
-            }catch (err) {
-                console.error(err)
-            }
+        } catch (err) {
+            console.error(err)
+        }
     },
 
-    // MUESTRA EL FORMULARIO DE CREACIÓN DE PRODUCTO
+    // Formulario de creacion de productos
     create: (req, res) => {
 
         res.render('product-create-form')
 
     },
 
-    // CREA EL PRODUCTO
+    // Creacion de productos
     store: (req, res) => {
         console.log(req.body)
 
@@ -73,8 +73,8 @@ const controller = {
         res.redirect("/");
     },
 
-    // MUESTRA LA VISTA PARA ACTUALIZAR UN PRODUCTO
-    edit: async (req, res) => {
+    // Actualizacion de productos
+    edit: async(req, res) => {
 
         let productToEdit = await db.Product.findByPk(req.params.id);
 
@@ -88,7 +88,7 @@ const controller = {
             productToEdit: productToEdit
         })
     },
-    // ACTUALIZA UN PRODUCTO
+    // Actualizacion de un producto
     update: (req, res) => {
 
         db.Product.update({
@@ -106,7 +106,7 @@ const controller = {
         res.redirect("/products/detail/" + req.params.id);
     },
 
-    // ELIMINA UN PRODUCTO DE LA BASE DE DATOS
+    // Eliminacion de un producto
     destroy: (req, res) => {
         db.Product.destroy({
             where: {

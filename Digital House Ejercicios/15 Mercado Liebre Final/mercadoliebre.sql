@@ -1,10 +1,9 @@
----------- !CUIDADO!: Este script borra, si existe, una base con el nombre "mercadoliebre" ----------
 
 DROP SCHEMA IF EXISTS `mercadoliebre` ;
 CREATE SCHEMA `mercadoliebre` DEFAULT CHARACTER SET utf8mb4 ;
 USE `mercadoliebre` ;
 
-CREATE TABLE `products` (
+CREATE TABLE `productos` (
   `id` INT unsigned NOT NULL AUTO_INCREMENT,
   `code` INT unsigned NOT NULL,
   `name` VARCHAR(100) NOT NULL,
@@ -13,13 +12,13 @@ CREATE TABLE `products` (
   `category` VARCHAR(45) NOT NULL,
   `description` VARCHAR(500) NOT NULL,
   `image` VARCHAR(45) NOT NULL,
-  `createdAt` TIMESTAMP NOT NULL,
-  `updatedAt` TIMESTAMP NOT NULL,
+  `createdAt` datetime,
+  `updatedAt` datetime,
   PRIMARY KEY (`id`),
   UNIQUE KEY `code_UNIQUE` (`code`))
 ENGINE=InnoDB;
 
-INSERT INTO `products` VALUES
+INSERT INTO `productos` VALUES
   (1,123456,'Cafetera Moulinex Dolce Gusto',12000.00,50,'visited','Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.','img-prod-code123456.jpg','2020-07-24 14:42:53','2020-07-24 14:42:53'),
   (2,123457,'Macbook Pro 2022',99999.00,3,'in-sale','Macbook Pro 2019 Mpxq2ll/a Intel Core i5 2.3 Ghz 8gb RAM 128gb SSD Pantalla 13.3\" Retina Apple Nueva Original. Importada de USA. Se entrega con la factura de compra para contar con la garantía del fabricante','img-prod-code123457.jpg','2020-07-24 14:42:53','2020-07-24 14:42:53'),
   (3,123458,'Samsung Galaxy S10',72999.00,25,'in-sale','Experiencia visual excepcional. Mirá tus series y películas favoritas con la mejor definición.Tendrás colores brillantes y detalles precisos en todos tus contenidos.Disfrutá aún más del mejor entretenimiento gracias a su vasta pantalla y ángulos de visión amplios.','img-prod-code123458.jpg','2020-07-24 14:42:53','2020-07-24 14:42:53'),
@@ -36,5 +35,3 @@ INSERT INTO `products` VALUES
   (14,123469,'Sony S6700 Reproductor De Blu-ray ',10999.00,5,'visited','Disfruta de tus películas favoritas con hasta cuatro veces más detalles que Full HD, gracias a la conversión de señales 4K. Cuando se conecta a un televisor compatible,un procesador de video avanzado convierte el video estándar en una señal cercana a la resolución 4K (3840 x 2160). Con ocho millones de píxeles, obtendrás imágenes más nítidas y detalladas, y la mayor calidad de la image te permite sentarte más cerca de la pantalla para que te sientas como en el cine.','img-prod-code123469.jpg','2020-07-24 14:42:54','2020-07-24 14:42:54'),
   (15,123470,'Bicicleta Mountain Bike Fierce Rodado 29',15979.00,12,'visited','Bicicleta Mountain Bike Fierce Rodado 29 21 velocidades. Tipo: Mountain Bike. Rodado: 29. Material Cuadro: Aluminio. Talle: 18. Suspensión: Delantera. Velocidades: 21 - Shimano. Sistema de Freno: Disco Mecánico. Llantas: Doble pared.','img-prod-code123470.jpg','2020-07-24 14:42:54','2020-07-24 14:42:54'),
   (16,123471,'Sony Srs-xb12 Parlante Bluetooth Portátil',4699.00,5,'in-sale','Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto. ','img-prod-code123471.jpg','2020-07-24 14:42:54','2020-07-24 14:42:54');
-
----------- !CUIDADO!: Este script borra, si existe, una base con el nombre "mercadoliebre" ----------
